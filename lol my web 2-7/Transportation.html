@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="icon" href="img/imgcom.jpg" />
+      <title>Uses of ICT for transportation</title>
+      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</head>
+<body>
+      <div class="temp"></div>
+      <div class="first-block"></div>
+      <div class="second-block"></div>
+      <div class="loader">
+            <ul>
+                  <li>L</li>
+                  <li>O</li>
+                  <li>A</li>
+                  <li>D</li>
+                  <li>I</li>
+                  <li>N</li>
+                  <li>G</li>
+            </ul>
+      </div>
+      <div class="third-block"></div>
+      
+      <div class="content2">
+            <div class="heading">
+                  <span>Transportation</span>
+            </div>
+            <div class="desc">
+                  <p>Information and Communication Technology (ICT) has had a significant impact on the transportation industry, revolutionizing the way we move people and goods from one place to another. In this paragraph, we will explore the various ways that ICT has transformed transportation, from improving safety and efficiency to providing new forms of transportation.
+
+                    One of the most significant impacts of ICT on transportation is the way it has improved safety. With the use of sensors, cameras, and other monitoring devices, vehicles can now detect potential hazards and avoid collisions. This technology has the potential to save thousands of lives each year, as it can prevent accidents caused by human error, distracted driving, and other factors.
+                    
+                    ICT has also revolutionized the way we manage transportation systems. With the use of intelligent transportation systems (ITS), traffic can be monitored in real-time, allowing for better traffic management and reduced congestion. This technology can also help to improve public transportation, by optimizing routes and schedules to better meet the needs of passengers.
+                    
+                    Another significant impact of ICT on transportation is the way it has enabled new forms of transportation. Ride-sharing services, such as Uber and Lyft, have become increasingly popular, providing an alternative to traditional taxi services. Electric vehicles have also become more prevalent, providing a cleaner and more sustainable form of transportation. In addition, autonomous vehicles are being developed, which could transform the way we think about transportation.
+                    
+                    ICT has also transformed the way we access transportation information. With the use of mobile apps, passengers can now access real-time information about transportation schedules, routes, and fares. This technology has made it easier for people to plan their trips and has made public transportation more accessible to a wider range of people.
+                    
+                    Finally, ICT has had a significant impact on the logistics industry. With the use of tracking and monitoring technology, companies can now manage their supply chains more efficiently, reducing costs and improving delivery times. This technology has also enabled the development of new delivery methods, such as drone delivery and autonomous trucks.
+                    
+                    In conclusion, ICT has revolutionized the transportation industry, from improving safety and efficiency to providing new forms of transportation. As technology continues to evolve, it is likely that we will see even more exciting developments in the world of transportation, with ICT playing a crucial role in shaping the future of the industry.</p>
+            </div>
+          </div>
+     
+      <div class="img">
+            <video src="./videos_for_uses/video_preview_h264.mp4" autoplay loop muted></video>
+      </div>
+      
+      <style>
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100vh;
+        }
+  
+        body {
+          background: #fff;
+        }
+  
+        .temp {
+          position: absolute;
+          width: 100%;
+          height: 100vh;
+          background: url(75ez.gif) no-repeat 50% 50%;
+          background-size: cover;
+          animation: fadeOut 5s linear forwards;
+          opacity: 1;
+        }
+  
+        @keyframes fadeOut {
+          0% {
+            opacity: 0;
+          }
+          40% {
+            opacity: 0;
+          }
+          41% {
+            opacity: 1;
+          }
+          91% {
+            opacity: 1;
+          }
+          92% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+  
+        .first-block {
+          position: absolute;
+          width: 0%;
+          height: 100vh;
+          background: #272727;
+          animation: go-left 4s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+          left: 0;
+        }
+  
+        @keyframes go-left {
+          0% {
+            left: 0;
+            width: 0%;
+          }
+          50% {
+            left: 0;
+            width: 100%;
+          }
+          100% {
+            left: 100%;
+            width: 0;
+          }
+        }
+  
+        .second-block {
+          position: absolute;
+          width: 0%;
+          height: 100vh;
+          background: #b08d74;
+          animation: go-left 3.2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+          animation-delay: 3s;
+        }
+  
+        .loader {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+  
+        .loader ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .loader ul li {
+          display: inline-block;
+          color: #fff;
+          font-family: Poppins;
+          font-weight: bolder;
+          margin: 0 8px;
+          font-size: 24px;
+          text-transform: uppercase;
+          animation: loadNow 4s ease-in-out forwards;
+          opacity: 0;
+          transform: translateX(0px);
+        }
+  
+        @keyframes loadNow {
+          0% {
+            opacity: 0;
+            transform: translateX(80px);
+          }
+          20% {
+            opacity: 1;
+            transform: translateX(0px);
+          }
+          80% {
+            opacity: 1;
+            transform: translateX(0px);
+          }
+          100% {
+            opacity: 0;
+            transform: translateX(-80px);
+          }
+        }
+  
+        .loader ul li:nth-child(1) {
+          animation-delay: 1.1s;
+        }
+  
+        .loader ul li:nth-child(2) {
+          animation-delay: 1.2s;
+        }
+  
+        .loader ul li:nth-child(3) {
+          animation-delay: 1.3s;
+        }
+  
+        .loader ul li:nth-child(4) {
+          animation-delay: 1.4s;
+        }
+  
+        .loader ul li:nth-child(5) {
+          animation-delay: 1.5s;
+        }
+  
+        .loader ul li:nth-child(6) {
+          animation-delay: 1.6s;
+        }
+  
+        .loader ul li:nth-child(7) {
+          animation-delay: 1.6s;
+        }
+  
+        .third-block {
+          position: absolute;
+          width: 0%;
+          height: 100vh;
+          background: #f0f0f0;
+          animation: expandNow 1.4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+          animation-delay: 6.2s;
+        }
+  
+        @keyframes expandNow {
+          0% {
+            width: 0%;
+          }
+  
+          100% {
+            width: 64%;
+          }
+        }
+  
+        .menu {
+          position: absolute;
+          right: 0;
+          margin: 2em;
+          font-size: 18px;
+        }
+  
+        .logo {
+          position: absolute;
+          left: 0;
+          margin: 2em;
+          font-family: Poppins;
+          text-transform: uppercase;
+          font-weight: bolder;
+          font-size: 18px;
+        }
+  
+        .content2 {
+      
+      position: absolute;
+      width: 52.5%;
+      height: 100vh;
+      text-align: left;
+      left: 1%;
+    }
+
+    .heading {
+      font-family: Poppins;
+      font-weight: bolder;
+      font-size: 42px;
+      margin-top: 10%;
+    }
+
+    .desc {
+     
+      font-family: Poppins;
+      font-weight: lighter;
+    }
+  
+        .desc p {
+          margin-top: 0px;
+        }
+  
+        button {
+          font-family: Poppins;
+          border-radius: none;
+          padding: 16px 40px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          background: #b08d74;
+          color: #fff;
+        }
+  
+        .img video {
+          width: 440px;
+        }
+  
+        .img {
+          position: fixed;
+          z-index: 0;
+          top: 50%;
+          right: 12%;
+          transform: translateY(-50%);
+        }
+  
+        video {
+          opacity: 0;
+          animation: appearimg 0.1s linear forwards;
+          animation-delay: 6.4s;
+        }
+  
+        .img:after {
+          content: "";
+          top: 0;
+          left: 0;
+          width: 0%;
+          height: 100%;
+          background: #272727;
+          position: absolute;
+          animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+          animation-delay: 6s;
+        }
+  
+        @keyframes rev-img {
+          0% {
+            left: 0;
+            width: 0%;
+          }
+          50% {
+            width: 440px;
+            left: 0;
+          }
+          100% {
+            left: 440px;
+            width: 0;
+          }
+        }
+  
+        @keyframes appearimg {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+  
+        .media ul {
+          list-style: none;
+          position: fixed;
+          right: 24px;
+          bottom: 0;
+          padding: 10px;
+        }
+  
+        .media ul li {
+          font-size: 18px;
+          margin: 24px 0;
+        }
+  
+        .watch {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          margin: 2em;
+        }
+      </style>
+
+  <script type="text/javascript">
+
+  TweenMax.from(".logo", 1.6, {
+        delay: 6.4,
+        opacity: 0,
+        y: 30,
+        ease: Expo.easeInOut
+  });
+
+  TweenMax.from(".menu", 1.6, {
+        delay: 6.5,
+        opacity: 0,
+        y: 30,
+        ease: Expo.easeInOut
+  });
+
+  TweenMax.from(".heading", 1.6, {
+        delay: 6.6,
+        opacity: 0,
+        y: 30,
+        ease: Expo.easeInOut
+  });
+
+  TweenMax.from(".desc", 1.6, {
+        delay: 6.7,
+        opacity: 0,
+        y: 30,
+        ease: Expo.easeInOut
+  });
+
+  TweenMax.from("button", 1.6, {
+        delay: 6.8,
+        opacity: 0,
+        y: 30,
+        ease: Expo.easeInOut
+  });
+
+  TweenMax.from(".watch", 1.6, {
+        delay: 6.9,
+        opacity: 0,
+        y: 30,
+        rotation: 90,
+        ease: Expo.easeInOut
+  });
+
+  TweenMax.staggerFrom(".media ul li", 2, {
+        delay: 7,
+        opacity: 0,
+        y: 40,
+        ease: Expo.easeInOut
+  }, 0.2);
+
+  </script>
+</body>
+</html>
